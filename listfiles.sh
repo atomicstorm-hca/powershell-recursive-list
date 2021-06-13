@@ -1,0 +1,1 @@
+Get-ChildItem -Recurse "C:\TestDir" | Where { ! $_.PSIsContainer } | Select FullName | Out-File -FilePath .\output.txt
